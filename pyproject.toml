@@ -6,6 +6,9 @@ readme = "README.md"
 requires-python = ">=3.13"
 dependencies = []
 
+[project.scripts]
+kadaie_1 = "pack.kadaie_1:main"
+
 [tool.uv]
 dev-dependencies = ["mypy", "notebook", "pandas", "pytest", "ruff"]
 
@@ -52,4 +55,4 @@ build-backend = "hatchling.build"
 dynamic = ["name", "version"]
 
 [tool.hatch.build.targets.wheel]
-packages = ["pack_test"]
+packages = ["pack"]
